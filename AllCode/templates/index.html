@@ -349,7 +349,7 @@
     <script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
     <script src="{% static 'js/main.js' %}"></script>
 
-    <script type="text/javascript">
+    <script>
 
 
         function setGetParameter() {
@@ -365,7 +365,7 @@
                     var arrayLength = data.length;
                     for (var i = 0; i < arrayLength; i++) {
                         console.log(String(data[i][0]));                
-                        $( "#searchresults").append("<a class=searchresult-" + i + " role='button' onclick='GetSolution("+ i +")' style='width:20%; float:left; margin-left:1em; cursor: pointer;'>" + String(data[i][0]) + " </div>");
+                        $( "#searchresults").append("<a class=searchresult-" + i + " role='button' onclick='GetSolution("+ i +")' style='width:100%; float:left; margin-left:1em; cursor: pointer;'>" + String(data[i][0]) + " </div>");
                     }
                 }
             });
@@ -374,7 +374,7 @@
         function GetSolution(searchresultid){
             var searchquery = $("#search").val();
             var searchresult = $(".searchresult-" + searchresultid)[0].text;
-            console.log(searchquery, searchresult)
+            //console.log(searchquery, searchresult)
             $.ajax({
                 url: '/ajax/get_action/',
                 data: {
@@ -393,11 +393,11 @@
                     var arrayLength = data.length;
                     for (var i = 0; i < arrayLength; i++) {
                         console.log(data[i]);                     
-                        $(".searchresult-" + searchresultid+"").append("<br>", "<a class=action-" + i + " role='button' style='width:20%; float:left; margin-left:1em; cursor: pointer;'>" + data[i][0] + " </div>");
+                        $(".searchresult-" + searchresultid+"").append("<a class=action-" + i + " role='button' style='width:40%; float:left; margin-left:1em; cursor: pointer;'>" + data[i][0] + " </div>");
                         $(".action-" + i + "").append(
                         "<div style='width:100%;'>",
-                        "<img style='width:33%; margin-right:3px;' src='{% static '/img/thumbs-up.png' %}' alt='thumbs-up' onclick=Feedback("+data[i][1]+ "," + true+") height='16' width='16'>",
-                        "<img style='width:33%;' src='{% static '/img/thumbs-down.png' %}' alt='thumbs-down' onclick=Feedback("+data[i][1]+ "," + false+") height='16' width='16'>",
+                        "<img style='wmargin-right:3px;' src='{% static '/img/thumbs-up.png' %}' alt='thumbs-up' onclick=Feedback("+ i + "," + true +") height='16' width='16'>",
+                        "<img style=';' src='{% static '/img/thumbs-down.png' %}' alt='thumbs-down' onclick=Feedback("+ i + "," + false +") height='16' width='16'>",
                         "</div>"
                         )
                     }
