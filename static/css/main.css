@@ -1899,7 +1899,7 @@ nav a:hover {
   color: white;
 }
 
-body {
+/*body {
   background-attachment: fixed;
   background-image: url("../img/body-bg.jpg");
   background-position: top center;
@@ -1916,12 +1916,12 @@ body:after {
   width: 100%;
   height: 100%;
   position: fixed;
-  background-image: -moz-linear-gradient(0deg, #e66587 0%, #f09458 100%);
-  background-image: -webkit-linear-gradient(0deg, #e66587 0%, #f09458 100%);
-  background-image: -ms-linear-gradient(0deg, #e66587 0%, #f09458 100%);
+  background-image: -moz-linear-gradient(0deg, #A9A9A9 0%, #A9A9A9 100%);
+  background-image: -webkit-linear-gradient(0deg, #A9A9A9 0%, #A9A9A9 100%);
+  background-image: -ms-linear-gradient(0deg, #A9A9A9 0%, #A9A9A9 100%);
   opacity: 0.6;
   z-index: -1;
-}
+}*/
 
 .main-wrapper-first {
   width: 68.75%;
@@ -1972,13 +1972,13 @@ body:after {
 }
 
 .p1-gradient-bg, .primary-btn:after, .banner-area, .single-feature .icon:after, .service-area, .story-area, .single-widget .icon:after {
-  background-image: -moz-linear-gradient(0deg, #e66587 0%, #f09458 100%);
-  background-image: -webkit-linear-gradient(0deg, #e66587 0%, #f09458 100%);
-  background-image: -ms-linear-gradient(0deg, #e66587 0%, #f09458 100%);
+  background-image: -moz-linear-gradient(0deg, #39870c 0%, #58f071 100%);
+  background-image: -webkit-linear-gradient(0deg, #39870c 0%, #58f071 100%);
+  background-image: -ms-linear-gradient(0deg, #39870c 0%, #58f071 100%);
 }
 
 .p1-gradient-color, .single-feature .icon span {
-  background: -webkit-linear-gradient(0deg, #e66587, #f09458);
+  background: -webkit-linear-gradient(0deg, #39870c, #58f071);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -2275,7 +2275,7 @@ body:after {
   position: relative;
 }
 
-.story-area:after {
+/*.story-area:after {
   position: absolute;
   content: "";
   top: 0;
@@ -2284,7 +2284,7 @@ body:after {
   height: 100%;
   background: url(../img/story-bg.jpg) no-repeat center center/cover;
   z-index: 1;
-}
+}*/
 
 @media (max-width: 991px) {
   .story-area:after {

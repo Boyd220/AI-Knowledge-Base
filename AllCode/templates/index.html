@@ -34,9 +34,18 @@
 </head>
 
 <body>
+
+            <div style="margin-bottom: -7em;   display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 11%;">
+            <img src="{% static 'img/logo-bzk-SSC_ICT_tcm8-1083.gif' %}"/>
+                </div>
+
+
     <div class="main-wrapper-first">
-        <header>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  
+            <nav class="navbar navbar-expand-lg navbar-light bg-light mynavbar">
                 <a class="navbar-brand" href="#">SSC-ICT AI Knowledge Base</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -51,7 +60,7 @@
                     </ul>
                 </div>
             </nav>
-        </header>
+
         <div class="banner-area">
       
                 <div class="justify-content-center height align-items-center">
@@ -73,7 +82,7 @@
         
         </div>
 
-        <!-- Start Feature Area -->
+        <!--
         <section class="featured-area">
             <div class="container">
                 <div class="row">
@@ -116,8 +125,7 @@
                 </div>
             </div>
         </section>
-        <!-- End Feature Area -->
-        <!-- Start Service Area
+      Start Service Area
         <section class="service-area">
             <div class="container">
                 <div class="row justify-content-center">
@@ -374,7 +382,7 @@
         function GetSolution(searchresultid){
             var searchquery = $("#search").val();
             var searchresult = $(".searchresult-" + searchresultid)[0].text;
-            console.log(searchquery, searchresult)
+            console.log(searchquery, searchresult);
             $.ajax({
                 url: '/ajax/get_action/',
                 data: {

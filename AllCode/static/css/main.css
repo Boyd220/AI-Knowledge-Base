@@ -1445,6 +1445,16 @@ h1, h2, h3, h4, h5, h6 {
   height: 100%;
 }
 
+.mynavbar{
+  background-image: url('../img/SSC-ICT-Haaglanden.png');
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* Needed to position the navbar */
+    position: relative;
+}
+
 .confirm-switch input + label:before {
   content: "";
   position: absolute;
@@ -1899,7 +1909,7 @@ nav a:hover {
   color: white;
 }
 
-body {
+/*body {
   background-attachment: fixed;
   background-image: url("../img/body-bg.jpg");
   background-position: top center;
@@ -1921,7 +1931,7 @@ body:after {
   background-image: -ms-linear-gradient(0deg, #e66587 0%, #f09458 100%);
   opacity: 0.6;
   z-index: -1;
-}
+}*/
 
 .main-wrapper-first {
   width: 68.75%;
@@ -2275,7 +2285,7 @@ body:after {
   position: relative;
 }
 
-.story-area:after {
+/*.story-area:after {
   position: absolute;
   content: "";
   top: 0;
@@ -2284,7 +2294,7 @@ body:after {
   height: 100%;
   background: url(../img/story-bg.jpg) no-repeat center center/cover;
   z-index: 1;
-}
+}*/
 
 @media (max-width: 991px) {
   .story-area:after {
